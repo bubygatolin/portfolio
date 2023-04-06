@@ -3,13 +3,13 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {  FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../../public/assets/mens.jpg';
 
 const Contact = () => {
   return (
-    <div className='w-full lg:h-screen'>
+    <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contato
@@ -27,8 +27,8 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Clint Briley</h2>
-                <p>Front-End Developer</p>
+                <h2 className='py-2'>Carolina Chimirri</h2>
+                <h3>Advogada</h3>
                 <p className='py-4'>
                 Estou disponível para posições freelance ou full-time. Entre em contato comigo e vamos conversar.
                 </p>
@@ -37,7 +37,7 @@ const Contact = () => {
                 <p className='uppercase pt-8'>Contate-me</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
-                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                    href='https://www.linkedin.com/in/carolina-chimirri-5b5230185/'
                     target='_blank'
                     rel='noreferrer'
                   >
@@ -46,12 +46,12 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href='https://github.com/fireclint'
+                    href='/#contact'
                     target='_blank'
                     rel='noreferrer'
                   >
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <FaGithub />
+                      <AiOutlineMail />
                     </div>
                   </a>
 

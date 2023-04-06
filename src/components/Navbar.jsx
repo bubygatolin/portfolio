@@ -10,7 +10,7 @@ import NavLogo from '../../public/assets/logo.png'
 
 const Navbar = () => {
   const[nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false)
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = ()=>{
       setNav(!nav);
@@ -30,20 +30,20 @@ const Navbar = () => {
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Image className='rounded-full' 
+        <Image className='rounded-full cursor-pointer hidden md:block' 
         src={NavLogo} 
         alt='/' width={250} 
         height={100} 
         />
         <div>
           <ul className='hidden md:flex'>
-            <Link href='' legacyBehavior>
+            <Link href='/' legacyBehavior>
                 <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
             </Link>
-            <Link href='' legacyBehavior>
+            <Link href='/#about' legacyBehavior>
                 <li className='ml-10 text-sm uppercase hover:border-b'>Sobre</li>
             </Link>
-            <Link href='' legacyBehavior>
+            <Link href='/#contact' legacyBehavior>
                 <li className='ml-10 text-sm uppercase hover:border-b'>Contato</li>
             </Link>
            
@@ -76,10 +76,10 @@ const Navbar = () => {
               <Link href='/' legacyBehavior>
                 <li className='py-4 text-sm'>Home</li>
               </Link>
-              <Link href='#about' legacyBehavior>
+              <Link href='/#about' legacyBehavior>
                 <li className='py-4 text-sm'>Sobre</li>
               </Link>
-              <Link href='/' legacyBehavior>
+              <Link href='/#contact' legacyBehavior>
                 <li className='py-4 text-sm'>Contato</li>
               </Link>
             </ul>

@@ -5,9 +5,9 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Main = () => {
   return (
-    <div className='w-full h-screen text-center'>
+    <div id='home' className='w-full h-screen text-center mt-4'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-        <div>
+        <div className='mt-60'>
           <h2 className='uppercase text-sm tracking-widest text-gray-600'>Consultoria pessoa física e jurídica</h2>
           <h1 className='py-4 text-gray-700'>
             Sou, <span className='text-[#5651e5]' >Carolina Chimirri</span>
@@ -23,18 +23,42 @@ const Main = () => {
             Competências: Direito de família · Direito das sucessões · Dupla cidadania · Direito imobiliário · Redação jurídica · Direito do consumidor · Direito civil · Direito processual civil · Direito contratual
           </p>
           <div className='flex items-center justify-between max-w[330px] m-auto py-4'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <FaLinkedin />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <AiOutlineMail/>
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <BsFillPersonLinesFill />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <FaInstagram />
-            </div>
+          <a
+              href='https://www.linkedin.com/in/carolina-chimirri-5b5230185/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaLinkedin />
+              </div>
+            </a>
+            <a
+              href='/#contact'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <AiOutlineMail />
+              </div>
+            </a>
+            <a
+              href='/#sobre'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <BsFillPersonLinesFill />
+              </div>
+            </a>
+            <a
+              href='https://www.instagram.com/carolfchimirri/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaInstagram />
+              </div>
+            </a>
           </div>
         </div>
       </div>

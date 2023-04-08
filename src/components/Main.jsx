@@ -6,9 +6,9 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center mt-4'>
-      <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+      <div className='max-w-[1240px] w-full h-full mx-auto  p-2 flex justify-center items-center'>
         <div className='mt-70'>
-          <h2 className='uppercase text-sm tracking-widest text-gray-600'>Consultoria pessoa física e jurídica</h2>
+          <h2 className='uppercase text-sm tracking-widest text-gray-600 mt-60 '>Consultoria pessoa física e jurídica</h2>
           <h1 className='py-4 text-gray-700'>
             Sou, <span className='text-[#5651e5]' >Carolina Chimirri</span>
           </h1>

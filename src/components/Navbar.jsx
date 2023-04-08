@@ -48,7 +48,7 @@ const Navbar = () => {
             </Link>
            
           </ul>
-          <div onClick={handleNav} className='md:hidden'>
+          <div onClick={handleNav} className='md:hidden '>
             <AiOutlineMenu size={25} />
           </div>
         </div>

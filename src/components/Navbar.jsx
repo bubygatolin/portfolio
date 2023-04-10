@@ -74,13 +74,13 @@ const Navbar = () => {
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/' legacyBehavior>
-                <li className='py-4 text-sm'>Home</li>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home</li>
               </Link>
               <Link href='/#about' legacyBehavior>
-                <li className='py-4 text-sm'>Sobre</li>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Sobre</li>
               </Link>
               <Link href='/#contact' legacyBehavior>
-                <li className='py-4 text-sm'>Contato</li>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Contato</li>
               </Link>
             </ul>
             <div className='pt-40'>
